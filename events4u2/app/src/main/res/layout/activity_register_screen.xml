@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:layout_margin="1dp"
+    tools:context=".RegisterScreen">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_marginTop="2dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/event"
+                android:layout_width="200dp"
+                android:layout_height="130dp" />
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:drawableLeft="@drawable/user"
+                    android:drawablePadding="10dp"
+                    android:id="@+id/rg_usrname"
+                    android:singleLine="true"
+                    android:fontFamily="serif"
+                    android:textSize="20dp"
+                    android:hint="UserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:drawableLeft="@drawable/mail"
+                    android:drawablePadding="10dp"
+                    android:id="@+id/rg_email"
+                    android:singleLine="true"
+                    android:fontFamily="serif"
+                    android:textSize="20dp"
+                    android:hint="E-mail"
+                    android:inputType="textEmailAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:drawableLeft="@drawable/number"
+                    android:drawablePadding="10dp"
+                    android:id="@+id/rg_mbnumber"
+                    android:singleLine="true"
+                    android:fontFamily="serif"
+                    android:textSize="20dp"
+                    android:hint="Mobile Number"
+                    android:inputType="number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <EditText
+                    android:drawableLeft="@drawable/password"
+                    android:drawablePadding="10dp"
+                    android:id="@+id/rg_pswd"
+                    android:singleLine="true"
+                    android:fontFamily="serif"
+                    android:textSize="20dp"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    android:textAllCaps="false"
+                    android:fontFamily="serif"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:text="Register"
+                    android:background="@drawable/shape"
+                    android:textColor="#ffffff"
+                    android:layout_width="355dp"
+                    android:layout_height="wrap_content" />
+
+
+            <Button
+                android:text="send OTP"
+                android:onClick="sendOtp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:ignore="OnClick" />
+
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:scaleType="fitXY"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="bottom"
+                android:src="@drawable/tranferent"
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:layout_marginBottom="1dp"/>
+        </LinearLayout>
+
+
+
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.medamoniaravind.events4u">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="EventZkart"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".LoginScreen"
+            android:label="LoginScreen" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".RegisterScreen"
+            android:label="RegistrationScreen" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".ForgotScreen"
+            android:label="ForgotPasswordScreen" />
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".SplashScreen"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".NavigableScreen"
+            android:label="@string/title_activity_navigable_screen"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".EditScreen"
+            android:screenOrientation="portrait"></activity>
+
+        <service android:name=".Firebase">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"></action>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

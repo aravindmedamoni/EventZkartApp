@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_margin="6dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <FrameLayout
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:scaleType="fitXY"
+            android:id="@+id/cs_image"
+            android:layout_width="match_parent"
+            android:layout_height="130dp" />
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/cs_title"
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="title"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:id="@+id/cs_venue"
+                android:textColor="#ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="venue"
+                android:textSize="17dp"/>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:weightSum="1"
+                android:layout_marginTop="48dp"
+                android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/cs_date"
+                android:layout_weight="0.5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:text="date"
+                android:textSize="17dp"/>
+
+                <TextView
+                    android:id="@+id/cs_price"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:textColor="#ffffff"
+                    android:textSize="17dp"
+                    android:text="price" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+
+
+
+</LinearLayout>
